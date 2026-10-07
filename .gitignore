@@ -1,0 +1,15 @@
+# Keep the published evidence tracked, including *.log and *.out.
+__pycache__/
+*.py[cod]
+.venv/
+.env
+.env.*
+!.env.example
+.DS_Store
+Thumbs.db
+# Fresh proof checkouts and new runs must be kept out of the published snapshot.
+work/
+local-runs/
+.lake/
+*.olean
+*.ilean

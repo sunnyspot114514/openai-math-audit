@@ -1,0 +1,596 @@
+{
+  "format_version": 1,
+  "date": "2026-10-07",
+  "source_archive": {
+    "name": "openai-math-audit-adc7f12.tar.gz",
+    "sha256": "4f792ce069732d04029f6da79bb425662ebd113600dca1f367e62ad9f593d582",
+    "included": false
+  },
+  "manual_source_archive": {
+    "name": "mahler_audit_20261007.zip",
+    "sha256": "cad9b80b88bbdec0aac67a564169ce2c45c2403375dd330872e776d8308ca74b",
+    "included": false
+  },
+  "source_checksums_verified_this_packaging": {
+    "outer": {
+      "matched": 58,
+      "listed": 58
+    },
+    "preaudit": {
+      "matched": 12,
+      "listed": 12
+    }
+  },
+  "fresh_lean_run_during_packaging": false,
+  "notes": [
+    "Original absolute audit-account paths are retained when needed for reproducibility. Unrelated host paths are pseudonymized.",
+    "Original source manifests are historical references; use root SHA256SUMS for this public edition.",
+    "Hashes check byte identity. They do not authenticate an execution history or prove a mathematical theorem."
+  ],
+  "files": [
+    {
+      "source": "out/DEPENDENCIES.txt",
+      "source_sha256": "711752ee7b24d051acb0b0b6ff1c4ad580d8a08b4bfb910a44e5166eb98f417f",
+      "destination": "evidence/machine/DEPENDENCIES.txt",
+      "published_sha256": "711752ee7b24d051acb0b0b6ff1c4ad580d8a08b4bfb910a44e5166eb98f417f",
+      "status": "unchanged",
+      "changes": []
+    },
+    {
+      "source": "out/PATCHES.txt",
+      "source_sha256": "097d17f6f78bc1fdcb751a74e1cb6374c8e7f71f18a738fc6e455cd8fa78cd53",
+      "destination": "evidence/machine/PATCHES.txt",
+      "published_sha256": "097d17f6f78bc1fdcb751a74e1cb6374c8e7f71f18a738fc6e455cd8fa78cd53",
+      "status": "unchanged",
+      "changes": []
+    },
+    {
+      "source": "out/PREAUDIT.md",
+      "source_sha256": "73a7a895ab98e48e6d23a629a45dbf99f8df437c39da6b56f28c44d8333e008e",
+      "destination": "evidence/machine/PREAUDIT.md",
+      "published_sha256": "73a7a895ab98e48e6d23a629a45dbf99f8df437c39da6b56f28c44d8333e008e",
+      "status": "unchanged",
+      "changes": []
+    },
+    {
+      "source": "out/REPORT.md",
+      "source_sha256": "69979d4779f25c6d0ffd1642b92689510a4d25517fe097414ac2a9aaa25d82cd",
+      "destination": "evidence/machine/REPORT.md",
+      "published_sha256": "e7b318def66f270b4e8231b26a643a5531e36254ea1b192086bad3714bb94917",
+      "status": "sanitized",
+      "changes": [
+        {
+          "category": "unrelated host path",
+          "replacement": "/workspace/other-project",
+          "occurrences": 2
+        },
+        {
+          "category": "unrelated host path",
+          "replacement": "/home/host-user",
+          "occurrences": 3
+        },
+        {
+          "category": "unrelated host path",
+          "replacement": "/tmp/unrelated-host-entry",
+          "occurrences": 1
+        }
+      ]
+    },
+    {
+      "source": "out/SEMANTICS.md",
+      "source_sha256": "be55c3329e3a33bc67d79314b44c727c4b927ef687bef5819d8e9c2cfb2d50aa",
+      "destination": "evidence/machine/SEMANTICS.md",
+      "published_sha256": "be55c3329e3a33bc67d79314b44c727c4b927ef687bef5819d8e9c2cfb2d50aa",
+      "status": "unchanged",
+      "changes": []
+    },
+    {
+      "source": "out/SHA256SUMS",
+      "source_sha256": "5a8fa314a6ab396fa76239130ae4d486d2b4651902018a0b384498e369d07f51",
+      "destination": "evidence/provenance/source_SHA256SUMS.txt",
+      "published_sha256": "5a8fa314a6ab396fa76239130ae4d486d2b4651902018a0b384498e369d07f51",
+      "status": "relocated",
+      "changes": []
+    },
+    {
+      "source": "out/VERSIONS.txt",
+      "source_sha256": "3e3d839a116d65d8880a085ddf138237f71f1bca703468fef66bb19f2fde8451",
+      "destination": "evidence/machine/VERSIONS.txt",
+      "published_sha256": "69200200cdc8cfdc00c2111f351ea146d0d84463926732e524d814b0e819e915",
+      "status": "sanitized",
+      "changes": [
+        {
+          "category": "host identifier",
+          "replacement": "audit-host",
+          "occurrences": 1
+        }
+      ]
+    },
+    {
+      "source": "out/axcheck/AxMahler.lean",
+      "source_sha256": "5274c59f8bb2af51c390a3867572b18cebbbd5d3be64d0d5bfbe26c96a05f0ee",
+      "destination": "evidence/machine/axcheck/AxMahler.lean",
+      "published_sha256": "5274c59f8bb2af51c390a3867572b18cebbbd5d3be64d0d5bfbe26c96a05f0ee",
+      "status": "unchanged",
+      "changes": []
+    },
+    {
+      "source": "out/axcheck/AxPolar.lean",
+      "source_sha256": "0a6582c97259fab2d73e916837a3070b0a0a38997ae1f452a387e212e1515d97",
+      "destination": "evidence/machine/axcheck/AxPolar.lean",
+      "published_sha256": "0a6582c97259fab2d73e916837a3070b0a0a38997ae1f452a387e212e1515d97",
+      "status": "unchanged",
+      "changes": []
+    },
+    {
+      "source": "out/axcheck/DefsMahler.lean",
+      "source_sha256": "5864d64d5e0def559dc0eae305eca1f726221768df6041c7c441e0a3b91c8c05",
+      "destination": "evidence/machine/axcheck/DefsMahler.lean",
+      "published_sha256": "5864d64d5e0def559dc0eae305eca1f726221768df6041c7c441e0a3b91c8c05",
+      "status": "unchanged",
+      "changes": []
+    },
+    {
+      "source": "out/axcheck/DefsPolar.lean",
+      "source_sha256": "882554a5ff29f82deb672171f9d8f413c93b5d8c53ba798ceef1326bc1d4e107",
+      "destination": "evidence/machine/axcheck/DefsPolar.lean",
+      "published_sha256": "882554a5ff29f82deb672171f9d8f413c93b5d8c53ba798ceef1326bc1d4e107",
+      "status": "unchanged",
+      "changes": []
+    },
+    {
+      "source": "out/axcheck-AxMahler.out",
+      "source_sha256": "d0af8a96128882beca8286667c5cd7cb0262811fef5eec7f46fc0cc62fa960ce",
+      "destination": "evidence/machine/axcheck-AxMahler.out",
+      "published_sha256": "d0af8a96128882beca8286667c5cd7cb0262811fef5eec7f46fc0cc62fa960ce",
+      "status": "unchanged",
+      "changes": []
+    },
+    {
+      "source": "out/axcheck-AxPolar.out",
+      "source_sha256": "bce05257c43bde0061f554902622325617e4995ca67ce7624280595334eb6a82",
+      "destination": "evidence/machine/axcheck-AxPolar.out",
+      "published_sha256": "bce05257c43bde0061f554902622325617e4995ca67ce7624280595334eb6a82",
+      "status": "unchanged",
+      "changes": []
+    },
+    {
+      "source": "out/axcheck-DefsMahler.attempt1-out.txt",
+      "source_sha256": "94d64bde42b21338fcd597bafcedf6158cc397f134e990cc2c2231e635a8d985",
+      "destination": "evidence/machine/axcheck-DefsMahler.attempt1-out.txt",
+      "published_sha256": "94d64bde42b21338fcd597bafcedf6158cc397f134e990cc2c2231e635a8d985",
+      "status": "unchanged",
+      "changes": []
+    },
+    {
+      "source": "out/axcheck-DefsMahler.out",
+      "source_sha256": "75bc5641d476e135afd3adeef160c08a72fc6c9432a1b5535ce88426b91087c4",
+      "destination": "evidence/machine/axcheck-DefsMahler.out",
+      "published_sha256": "75bc5641d476e135afd3adeef160c08a72fc6c9432a1b5535ce88426b91087c4",
+      "status": "unchanged",
+      "changes": []
+    },
+    {
+      "source": "out/axcheck-DefsPolar.out",
+      "source_sha256": "0e43b5a9fbcd8d98c0bc5e1a79a975e338a3dc9c97a849809bf520855d39e9d7",
+      "destination": "evidence/machine/axcheck-DefsPolar.out",
+      "published_sha256": "0e43b5a9fbcd8d98c0bc5e1a79a975e338a3dc9c97a849809bf520855d39e9d7",
+      "status": "unchanged",
+      "changes": []
+    },
+    {
+      "source": "out/axcheck-exitcodes.txt",
+      "source_sha256": "770cec699c6865fd5483b90b2f3f272ddef6a67475b051761ad60a56e25d4175",
+      "destination": "evidence/machine/axcheck-exitcodes.txt",
+      "published_sha256": "770cec699c6865fd5483b90b2f3f272ddef6a67475b051761ad60a56e25d4175",
+      "status": "unchanged",
+      "changes": []
+    },
+    {
+      "source": "out/axcheck-run.sh",
+      "source_sha256": "95d92849c44c2b1171c76d8936afba10a895c310d9aeba728f0639b1c6990311",
+      "destination": "evidence/machine/axcheck-run.sh",
+      "published_sha256": "95d92849c44c2b1171c76d8936afba10a895c310d9aeba728f0639b1c6990311",
+      "status": "unchanged",
+      "changes": []
+    },
+    {
+      "source": "out/comparator-README-d03acab.md",
+      "source_sha256": "cfdf0ff608755d56f3bad62acc86273bc0c11591335678344bf53cb733b61772",
+      "destination": "evidence/machine/comparator-README-d03acab.md",
+      "published_sha256": "cfdf0ff608755d56f3bad62acc86273bc0c11591335678344bf53cb733b61772",
+      "status": "unchanged",
+      "changes": []
+    },
+    {
+      "source": "out/comparator-README-master-ca04cfc.md",
+      "source_sha256": "cfdf0ff608755d56f3bad62acc86273bc0c11591335678344bf53cb733b61772",
+      "destination": "evidence/machine/comparator-README-master-ca04cfc.md",
+      "published_sha256": "cfdf0ff608755d56f3bad62acc86273bc0c11591335678344bf53cb733b61772",
+      "status": "unchanged",
+      "changes": []
+    },
+    {
+      "source": "out/credential-readability-scan.txt",
+      "source_sha256": "16b8e40dc06b6b1c84ecaf6de09e36dfd2fd91f970f9a930d01a2cca61098072",
+      "destination": "evidence/machine/credential-readability-scan.txt",
+      "published_sha256": "793b0ea33a38a4dc4666badcb892e66a76f5e1dc6ed4b217385eef57f4c3b0ba",
+      "status": "sanitized",
+      "changes": [
+        {
+          "category": "unrelated host path",
+          "replacement": "/workspace/other-project",
+          "occurrences": 1
+        },
+        {
+          "category": "unrelated host path",
+          "replacement": "/home/host-user",
+          "occurrences": 3
+        },
+        {
+          "category": "unrelated host path",
+          "replacement": "/tmp/unrelated-host-entry",
+          "occurrences": 1
+        }
+      ]
+    },
+    {
+      "source": "out/deps-cache-get.exitcode",
+      "source_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "destination": "evidence/machine/deps-cache-get.exitcode",
+      "published_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "status": "unchanged",
+      "changes": []
+    },
+    {
+      "source": "out/deps-cache-get.log",
+      "source_sha256": "0a7f362242372437b8280b06fb9b6f600b6061d2b11101d6ab9b85bea6a74dc9",
+      "destination": "evidence/machine/deps-cache-get.log",
+      "published_sha256": "0a7f362242372437b8280b06fb9b6f600b6061d2b11101d6ab9b85bea6a74dc9",
+      "status": "unchanged",
+      "changes": []
+    },
+    {
+      "source": "out/deps-cache-get.time.txt",
+      "source_sha256": "cc24f73863d33e8db3dfcfd2cf440820e0af9a516322de7b4b073b87d194f61b",
+      "destination": "evidence/machine/deps-cache-get.time.txt",
+      "published_sha256": "cc24f73863d33e8db3dfcfd2cf440820e0af9a516322de7b4b073b87d194f61b",
+      "status": "unchanged",
+      "changes": []
+    },
+    {
+      "source": "out/git-log-1.txt",
+      "source_sha256": "610a55853910aff7c103e46c0e6d24ee61ae86d8c3c8dc90efbb6557914adcc9",
+      "destination": "evidence/machine/git-log-1.txt",
+      "published_sha256": "610a55853910aff7c103e46c0e6d24ee61ae86d8c3c8dc90efbb6557914adcc9",
+      "status": "unchanged",
+      "changes": []
+    },
+    {
+      "source": "out/imports.py",
+      "source_sha256": "f5932f744aab2a4f4b8f0793588b7bb4b435b4ce19532c13ffe1b36b3bae7d41",
+      "destination": "evidence/machine/imports.py",
+      "published_sha256": "f5932f744aab2a4f4b8f0793588b7bb4b435b4ce19532c13ffe1b36b3bae7d41",
+      "status": "unchanged",
+      "changes": []
+    },
+    {
+      "source": "out/landrun-selftest.log",
+      "source_sha256": "0af31e497b2ff292ae76bdd8a54f2f27540b5b5c142b1424882e6186e14fe1b3",
+      "destination": "evidence/machine/landrun-selftest.log",
+      "published_sha256": "0af31e497b2ff292ae76bdd8a54f2f27540b5b5c142b1424882e6186e14fe1b3",
+      "status": "unchanged",
+      "changes": []
+    },
+    {
+      "source": "out/ma.sh",
+      "source_sha256": "561966efbf232931e2bea3e879947e1b6384a41efe24625be9be2c6519212d2a",
+      "destination": "evidence/machine/ma.sh",
+      "published_sha256": "561966efbf232931e2bea3e879947e1b6384a41efe24625be9be2c6519212d2a",
+      "status": "unchanged",
+      "changes": []
+    },
+    {
+      "source": "out/mahler.cmd.txt",
+      "source_sha256": "7ccbd7e4e39e08668dee09341be4f735f047115a2143c15ccde1d5d35277cfd4",
+      "destination": "evidence/machine/mahler.cmd.txt",
+      "published_sha256": "7ccbd7e4e39e08668dee09341be4f735f047115a2143c15ccde1d5d35277cfd4",
+      "status": "unchanged",
+      "changes": []
+    },
+    {
+      "source": "out/mahler.exitcode",
+      "source_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "destination": "evidence/machine/mahler.exitcode",
+      "published_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "status": "unchanged",
+      "changes": []
+    },
+    {
+      "source": "out/mahler.memsamples.txt",
+      "source_sha256": "e92a253c66e27a491ca960ac567e522686c28f6530d96b24d93afa6247c4972a",
+      "destination": "evidence/machine/mahler.memsamples.txt",
+      "published_sha256": "e92a253c66e27a491ca960ac567e522686c28f6530d96b24d93afa6247c4972a",
+      "status": "unchanged",
+      "changes": []
+    },
+    {
+      "source": "out/mahler.stderr.log",
+      "source_sha256": "1e7f30ef5d783cb814dcd4a0f021e61b2fb32f38c3b2d4590e12830fcd93f0fd",
+      "destination": "evidence/machine/mahler.stderr.log",
+      "published_sha256": "1e7f30ef5d783cb814dcd4a0f021e61b2fb32f38c3b2d4590e12830fcd93f0fd",
+      "status": "unchanged",
+      "changes": []
+    },
+    {
+      "source": "out/mahler.stdout.log",
+      "source_sha256": "762dc0674128fdfa14f13afa57c56efeb44f29b64d9a5bb756698309008997e6",
+      "destination": "evidence/machine/mahler.stdout.log",
+      "published_sha256": "762dc0674128fdfa14f13afa57c56efeb44f29b64d9a5bb756698309008997e6",
+      "status": "unchanged",
+      "changes": []
+    },
+    {
+      "source": "out/mahler.time.txt",
+      "source_sha256": "059360c1eabf2455b303fffea03bd03fbb4aba22b1681c567609da0635b0731d",
+      "destination": "evidence/machine/mahler.time.txt",
+      "published_sha256": "059360c1eabf2455b303fffea03bd03fbb4aba22b1681c567609da0635b0731d",
+      "status": "unchanged",
+      "changes": []
+    },
+    {
+      "source": "out/package-local-changes.txt",
+      "source_sha256": "c5d730e2ba5e8df09cf8d3db4eaca79ad8be2f824c95266da39ce7feee49ccb4",
+      "destination": "evidence/machine/package-local-changes.txt",
+      "published_sha256": "c5d730e2ba5e8df09cf8d3db4eaca79ad8be2f824c95266da39ce7feee49ccb4",
+      "status": "unchanged",
+      "changes": []
+    },
+    {
+      "source": "out/polar.cmd.txt",
+      "source_sha256": "d25037e0b35287e770c3605ab496fa9a11d65c1c8b10324bf359fae1ed35c707",
+      "destination": "evidence/machine/polar.cmd.txt",
+      "published_sha256": "d25037e0b35287e770c3605ab496fa9a11d65c1c8b10324bf359fae1ed35c707",
+      "status": "unchanged",
+      "changes": []
+    },
+    {
+      "source": "out/polar.exitcode",
+      "source_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "destination": "evidence/machine/polar.exitcode",
+      "published_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "status": "unchanged",
+      "changes": []
+    },
+    {
+      "source": "out/polar.memsamples.txt",
+      "source_sha256": "458dee5da549bc136f1baa6b74b1132272eb524c616cfee17cd52572619de0a2",
+      "destination": "evidence/machine/polar.memsamples.txt",
+      "published_sha256": "458dee5da549bc136f1baa6b74b1132272eb524c616cfee17cd52572619de0a2",
+      "status": "unchanged",
+      "changes": []
+    },
+    {
+      "source": "out/polar.stderr.log",
+      "source_sha256": "1e7f30ef5d783cb814dcd4a0f021e61b2fb32f38c3b2d4590e12830fcd93f0fd",
+      "destination": "evidence/machine/polar.stderr.log",
+      "published_sha256": "1e7f30ef5d783cb814dcd4a0f021e61b2fb32f38c3b2d4590e12830fcd93f0fd",
+      "status": "unchanged",
+      "changes": []
+    },
+    {
+      "source": "out/polar.stdout.log",
+      "source_sha256": "479bb5cbda130818d2ff1fb1a20bca7ad449ae17c1443109be140c80c9939b7b",
+      "destination": "evidence/machine/polar.stdout.log",
+      "published_sha256": "479bb5cbda130818d2ff1fb1a20bca7ad449ae17c1443109be140c80c9939b7b",
+      "status": "unchanged",
+      "changes": []
+    },
+    {
+      "source": "out/polar.time.txt",
+      "source_sha256": "7bd45cd83cf741d0c3a065d03c8abb6b85e83e980dad2fc1a560eb2132de5980",
+      "destination": "evidence/machine/polar.time.txt",
+      "published_sha256": "7bd45cd83cf741d0c3a065d03c8abb6b85e83e980dad2fc1a560eb2132de5980",
+      "status": "unchanged",
+      "changes": []
+    },
+    {
+      "source": "out/preaudit-copies/ComparatorChallenges-README.md",
+      "source_sha256": "051459a45da1bedd1c0a6585a5b5e5425c7c40a369f2922d7b519e2fd02333b0",
+      "destination": "evidence/machine/preaudit-copies/ComparatorChallenges-README.md",
+      "published_sha256": "051459a45da1bedd1c0a6585a5b5e5425c7c40a369f2922d7b519e2fd02333b0",
+      "status": "unchanged",
+      "changes": []
+    },
+    {
+      "source": "out/preaudit-copies/MahlerConjecture.json",
+      "source_sha256": "fdf11d50fc36b5ae3d13aeea074aa6e40071c6bacd8de44fc399ac9ac9251959",
+      "destination": "evidence/machine/preaudit-copies/MahlerConjecture.json",
+      "published_sha256": "fdf11d50fc36b5ae3d13aeea074aa6e40071c6bacd8de44fc399ac9ac9251959",
+      "status": "unchanged",
+      "changes": []
+    },
+    {
+      "source": "out/preaudit-copies/MahlerConjecture.lean",
+      "source_sha256": "40718172f61fe01f6c96b4c28324a1d76491eb84af4776d8507d8cdcb3120ea0",
+      "destination": "evidence/machine/preaudit-copies/MahlerConjecture.lean",
+      "published_sha256": "40718172f61fe01f6c96b4c28324a1d76491eb84af4776d8507d8cdcb3120ea0",
+      "status": "unchanged",
+      "changes": []
+    },
+    {
+      "source": "out/preaudit-copies/README.md",
+      "source_sha256": "051459a45da1bedd1c0a6585a5b5e5425c7c40a369f2922d7b519e2fd02333b0",
+      "destination": "evidence/machine/preaudit-copies/README.md",
+      "published_sha256": "051459a45da1bedd1c0a6585a5b5e5425c7c40a369f2922d7b519e2fd02333b0",
+      "status": "unchanged",
+      "changes": []
+    },
+    {
+      "source": "out/preaudit-copies/SHA256SUMS",
+      "source_sha256": "19e9b5ed2a32eee44a606336512dba347d65f38e8727a811824aecdd753000fb",
+      "destination": "evidence/provenance/source_preaudit_SHA256SUMS.txt",
+      "published_sha256": "19e9b5ed2a32eee44a606336512dba347d65f38e8727a811824aecdd753000fb",
+      "status": "relocated",
+      "changes": []
+    },
+    {
+      "source": "out/preaudit-copies/SymmetricPolar.json",
+      "source_sha256": "0665fbaed509ae1465a32ed1f1548988b1416b15a93f1c8eec10cdc633b06e95",
+      "destination": "evidence/machine/preaudit-copies/SymmetricPolar.json",
+      "published_sha256": "0665fbaed509ae1465a32ed1f1548988b1416b15a93f1c8eec10cdc633b06e95",
+      "status": "unchanged",
+      "changes": []
+    },
+    {
+      "source": "out/preaudit-copies/SymmetricPolar.lean",
+      "source_sha256": "3683f15ea0cf510f677e40d0db8aff6c2b442bac325241984ff5a57ca4d9075a",
+      "destination": "evidence/machine/preaudit-copies/SymmetricPolar.lean",
+      "published_sha256": "3683f15ea0cf510f677e40d0db8aff6c2b442bac325241984ff5a57ca4d9075a",
+      "status": "unchanged",
+      "changes": []
+    },
+    {
+      "source": "out/preaudit-copies/docs-087.md",
+      "source_sha256": "85fdda35b4d2c609d330331cde9972b51dcda6127eef31d42e451c1bb644b0eb",
+      "destination": "evidence/machine/preaudit-copies/docs-087.md",
+      "published_sha256": "85fdda35b4d2c609d330331cde9972b51dcda6127eef31d42e451c1bb644b0eb",
+      "status": "unchanged",
+      "changes": []
+    },
+    {
+      "source": "out/preaudit-copies/lake-manifest.json",
+      "source_sha256": "cf6105a25d9dca2f166b241d9191bd12c7e13305890dc9c4d0952351cccc0794",
+      "destination": "evidence/machine/preaudit-copies/lake-manifest.json",
+      "published_sha256": "cf6105a25d9dca2f166b241d9191bd12c7e13305890dc9c4d0952351cccc0794",
+      "status": "unchanged",
+      "changes": []
+    },
+    {
+      "source": "out/preaudit-copies/lakefile.lean",
+      "source_sha256": "4cca977ebece444b6c999d99755c1ad3c93119bafc127ea761f7f703c7279e74",
+      "destination": "evidence/machine/preaudit-copies/lakefile.lean",
+      "published_sha256": "4cca977ebece444b6c999d99755c1ad3c93119bafc127ea761f7f703c7279e74",
+      "status": "unchanged",
+      "changes": []
+    },
+    {
+      "source": "out/preaudit-copies/lean-README.md",
+      "source_sha256": "292ff9d539f494158dfbf68d989ba85a82782a4343b2fe43088f8fa62525bf1b",
+      "destination": "evidence/machine/preaudit-copies/lean-README.md",
+      "published_sha256": "292ff9d539f494158dfbf68d989ba85a82782a4343b2fe43088f8fa62525bf1b",
+      "status": "unchanged",
+      "changes": []
+    },
+    {
+      "source": "out/preaudit-copies/lean-toolchain",
+      "source_sha256": "d5edba4e4b8faad9c1baeadb265716d20d03be4d1a2647dc5e35b0c0325bea7b",
+      "destination": "evidence/machine/preaudit-copies/lean-toolchain",
+      "published_sha256": "d5edba4e4b8faad9c1baeadb265716d20d03be4d1a2647dc5e35b0c0325bea7b",
+      "status": "unchanged",
+      "changes": []
+    },
+    {
+      "source": "out/preaudit-copies/patches-README.md",
+      "source_sha256": "6d2020cdb49a99331391ea3331bd817a8b31fad33e5be4555247c9f1194542e2",
+      "destination": "evidence/machine/preaudit-copies/patches-README.md",
+      "published_sha256": "6d2020cdb49a99331391ea3331bd817a8b31fad33e5be4555247c9f1194542e2",
+      "status": "unchanged",
+      "changes": []
+    },
+    {
+      "source": "out/restrict_af_unix.c",
+      "source_sha256": "558e9267cd792c36de55b4f419d0fb7d72d876b8a83eb891246fc25da7cf57b4",
+      "destination": "evidence/machine/restrict_af_unix.c",
+      "published_sha256": "558e9267cd792c36de55b4f419d0fb7d72d876b8a83eb891246fc25da7cf57b4",
+      "status": "unchanged",
+      "changes": []
+    },
+    {
+      "source": "out/run_comparator.sh",
+      "source_sha256": "2e1f1990ef3ceb7ad9689175a5cf39fc96e0fd29a7dd6aa7b936050f80526c01",
+      "destination": "evidence/machine/run_comparator.sh",
+      "published_sha256": "2e1f1990ef3ceb7ad9689175a5cf39fc96e0fd29a7dd6aa7b936050f80526c01",
+      "status": "unchanged",
+      "changes": []
+    },
+    {
+      "source": "out/systemd-RestrictAddressFamilies-doc-excerpt.txt",
+      "source_sha256": "375f3d23e46b3f29c49356898eafd882b1e355a8c4dfa776d1cf29212c906cc4",
+      "status": "omitted",
+      "reason": "Third-party documentation excerpt; the primary documentation is linked instead."
+    },
+    {
+      "source": "out/tool-build-comparator.log",
+      "source_sha256": "3200cb77e954dea79e1fd0ad04a803aa30f22631c2921a271b56fa003f6e5334",
+      "destination": "evidence/machine/tool-build-comparator.log",
+      "published_sha256": "3200cb77e954dea79e1fd0ad04a803aa30f22631c2921a271b56fa003f6e5334",
+      "status": "unchanged",
+      "changes": []
+    },
+    {
+      "source": "out/tool-patch-comparator-toolchain.diff",
+      "source_sha256": "16e572448c2809ce14f408d0a3e34a43f9f752082f911ee5c68c3310d62ae6e9",
+      "destination": "evidence/machine/tool-patch-comparator-toolchain.diff",
+      "published_sha256": "16e572448c2809ce14f408d0a3e34a43f9f752082f911ee5c68c3310d62ae6e9",
+      "status": "unchanged",
+      "changes": []
+    },
+    {
+      "source": "out/workspace-diff.txt",
+      "source_sha256": "64b3056ab226957a4578689fde82e03573ee93cb2857e266a2d879d525f72264",
+      "destination": "evidence/machine/workspace-diff.txt",
+      "published_sha256": "64b3056ab226957a4578689fde82e03573ee93cb2857e266a2d879d525f72264",
+      "status": "unchanged",
+      "changes": []
+    },
+    {
+      "source": "mahler_audit_20261007/audit_zh.md",
+      "source_sha256": "852d7224a3e7272fd773c2b167c94a1112a4077138301d2cd5608cee6fd1232d",
+      "destination": "evidence/manual/audit_zh.md",
+      "published_sha256": "852d7224a3e7272fd773c2b167c94a1112a4077138301d2cd5608cee6fd1232d",
+      "status": "unchanged",
+      "changes": []
+    },
+    {
+      "source": "mahler_audit_20261007/diagnostics.json",
+      "source_sha256": "435dd710971cb53417ea5915f6ceb7946a13d932c20a852317c4bfa62f80cde7",
+      "destination": "evidence/manual/diagnostics.json",
+      "published_sha256": "435dd710971cb53417ea5915f6ceb7946a13d932c20a852317c4bfa62f80cde7",
+      "status": "unchanged",
+      "changes": []
+    },
+    {
+      "source": "mahler_audit_20261007/diagnostics.py",
+      "source_sha256": "1520f2f9fc5a46303b412eb9f22153d147f2390c45cfb5e1bd39641a075fde7d",
+      "destination": "evidence/manual/diagnostics.py",
+      "published_sha256": "1520f2f9fc5a46303b412eb9f22153d147f2390c45cfb5e1bd39641a075fde7d",
+      "status": "unchanged",
+      "changes": []
+    },
+    {
+      "source": "mahler_audit_20261007/manifest.json",
+      "source_sha256": "5f4d9f125f7be2c4dd8a57261365a36f303f0c2529715e0175d83d7de4979dac",
+      "destination": "evidence/manual/manifest.json",
+      "published_sha256": "5f4d9f125f7be2c4dd8a57261365a36f303f0c2529715e0175d83d7de4979dac",
+      "status": "unchanged",
+      "changes": []
+    },
+    {
+      "source": "secondary_review/second_review_zh.md",
+      "source_sha256": "bdf77922bb2ad2f6586e58b86f9db4018e2a87dce57ed3a0c03ff055fb6d1b59",
+      "destination": "evidence/secondary/second_review_zh.md",
+      "published_sha256": "bdf77922bb2ad2f6586e58b86f9db4018e2a87dce57ed3a0c03ff055fb6d1b59",
+      "status": "unchanged",
+      "changes": []
+    },
+    {
+      "source": "secondary_review/upstream_blob_checks.json",
+      "source_sha256": "574d8eebb30ff09f854777c8de3c0c2765f5dc931d91d810e745f768291e2259",
+      "destination": "evidence/secondary/upstream_blob_checks.json",
+      "published_sha256": "574d8eebb30ff09f854777c8de3c0c2765f5dc931d91d810e745f768291e2259",
+      "status": "unchanged",
+      "changes": []
+    }
+  ]
+}

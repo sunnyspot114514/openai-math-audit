@@ -1,0 +1,66 @@
+# DEPENDENCIES — openai/math @ adc7f1241b42e322a6451854ab7e4b4c146bf78a (lean/)
+lake-manifest.json sha256: cf6105a25d9dca2f166b241d9191bd12c7e13305890dc9c4d0952351cccc0794 (unchanged; git diff empty)
+Resolution: manifest-locked (NO lake update). Packages cloned by Lake during `lake exe cache get`; 11 lana-agents packages cloned+patched by lakefile run_cmd.
+
+## Mathlib cache
+command: lake exe cache get   (from lean/, as uid mathaudit; log: deps-cache-get.log, exit 0)
+Current branch: HEAD
+Using cache from origin: (some leanprover-community/mathlib4)
+Attempting to download 8908 file(s) from leanprover-community/mathlib4 cache at https://cache.mathlib.org/mathlib4-master
+Decompressed 8908 file(s)
+cache tool built from: .lake/packages/mathlib (Cache/*) @ d13f23b723b8a846827a245b89c10fc7d3f11612
+mathlib lean-toolchain: leanprover/lean4:v4.34.1
+Mathlib .lake/build size: 6.7G; olean count: 8548
+No cache/oleans obtained for OAI or any non-Mathlib-closure package. lean/.lake/build did not exist before the Comparator runs; all OAI oleans were built by Comparator in its landrun sandbox.
+
+## Packages (.lake/packages) — manifest rev vs checkout HEAD, tracked-change status
+mathlib                      rev=d13f23b723b8a846827a245b89c10fc7d3f11612 head_match=True inherited=False tracked_changes=  0 https://github.com/leanprover-community/mathlib4.git
+checkdecls                   rev=3d425859e73fcfbef85b9638c2a91708ef4a22d4 head_match=True inherited=False tracked_changes=  0 https://github.com/PatrickMassot/checkdecls.git
+doc-gen4                     rev=953c8992d174b4e56955e01e101d46668c68f2bb head_match=True inherited=False tracked_changes=  0 https://github.com/leanprover/doc-gen4.git
+PrimeCert                    rev=0803c2f6bd289c09704c7d352bb8fcf770cbb9b2 head_match=True inherited=False tracked_changes=  0 https://github.com/b-mehta/PrimeCert.git
+LeanArchitect                rev=468e8f58fb4ad6e6ad672a08da6d0d0531e95a97 head_match=True inherited=False tracked_changes=  0 https://github.com/hanwenzhu/LeanArchitect.git
+leancert                     rev=7f91b6eb3567437f6cfac03ed279706603ee22f4 head_match=True inherited=False tracked_changes=  0 https://github.com/alerad/leancert.git
+PrimeNumberTheoremAnd        rev=c39a751132c88b6e8080b74c74023fd95b3d8be0 head_match=True inherited=False tracked_changes=  0 https://github.com/AlexKontorovich/PrimeNumberTheoremAnd.git
+belyi                        rev=9ce4d3f793d3bc831f2fc7214b7dbad90ea012d8 head_match=True inherited=False tracked_changes= 15 https://github.com/lana-agents/belyi.git
+formal-schemes               rev=51aa935079537bf4dc580751a6e70727fb23ca93 head_match=True inherited=False tracked_changes=  5 https://github.com/lana-agents/formal-schemes.git
+elliptic-curves              rev=bebec3fc9f2602e81c83e5236789572a541c85fb head_match=True inherited=False tracked_changes= 22 https://github.com/lana-agents/elliptic-curves.git
+tempered-fundamental-groups  rev=2006651f52b70ea2fe3388238c7d9db14d21748f head_match=True inherited=False tracked_changes=  6 https://github.com/lana-agents/tempered-fundamental-groups.git
+oka                          rev=75dcdc3faadd10b986afb9283e89902bcdddecd4 head_match=True inherited=False tracked_changes= 87 https://github.com/lana-agents/oka.git
+orbicurve-cores              rev=61616dcd77fbe45c083a8ebfa7cc80728f86e841 head_match=True inherited=False tracked_changes= 26 https://github.com/lana-agents/orbicurve-cores.git
+pi1                          rev=ca7def953193f861a462aa0831eec8f0a31ff69f head_match=True inherited=False tracked_changes= 19 https://github.com/lana-agents/pi1.git
+heights                      rev=721496ca4c158e511d25d8ccf6bfe8503eda73c1 head_match=True inherited=False tracked_changes= 17 https://github.com/lana-agents/heights.git
+genl                         rev=ea2846c877d1e16d8f0b911a5fed07f5ee69eaaf head_match=True inherited=False tracked_changes=  3 https://github.com/lana-agents/genl.git
+tate-curves-theta            rev=ca6c2279d3cea0690cdb01328e727118d5485d68 head_match=True inherited=False tracked_changes=  3 https://github.com/lana-agents/tate-curves-theta.git
+iut                          rev=d9465c111ec4073709f67e9fccec7e3eb374a816 head_match=True inherited=False tracked_changes= 29 https://github.com/lana-agents/iut.git
+gromov                       rev=8db79f13cf211b570e3116301d91379fbc01cf3e head_match=True inherited=False tracked_changes=  0 https://github.com/Aaron1011/gromov.git
+TauCeti                      rev=3bed7e37f3c504a99e8c07e9f309540812a7aa90 head_match=True inherited=False tracked_changes=  0 https://github.com/TauCetiProject/TauCeti.git
+SphereEversion               rev=9c53f91e2a281199163ecea04dc4976cb79e2076 head_match=True inherited=False tracked_changes=  0 https://github.com/leanprover-community/sphere-eversion.git
+schoenflies-lean             rev=05a43d29cde026618777db3d4e4316204ccca237 head_match=True inherited=False tracked_changes=  0 https://github.com/alonamaloh/schoenflies-lean
+ClassFieldTheory             rev=2eb22d6485af45f29c5219de6c49f196a61c4f49 head_match=True inherited=False tracked_changes=  0 https://github.com/n-yamaguchi-0729/ClassFieldTheory.git
+AINTLIB                      rev=160e446617a2168c34c95bbe7a76c4105b392434 head_match=True inherited=False tracked_changes=  0 https://github.com/CBirkbeck/AINTLIB.git
+AbsorptionCutoff             rev=41c45c6d72e979419e46224bb7b4be5cee31f2b5 head_match=True inherited=False tracked_changes=  0 https://github.com/BennyAvelin/AbsorptionCutoff.git
+StrongPNT                    rev=2f5835c322314f55f1026ec2f139d704b7c45c69 head_match=True inherited=False tracked_changes=  0 https://github.com/math-inc/strongpnt.git
+carleson                     rev=306ae5b29300771aece1aa39f0a939183cc59486 head_match=True inherited=False tracked_changes=  0 https://github.com/fpvandoorn/carleson.git
+rellich-kondrachov           rev=70f85d4c1bf99c6e7d61e8be4daa6f3664d08d23 head_match=True inherited=False tracked_changes=  0 https://github.com/abenenson/rellich-kondrachov.git
+Zeta3Irrational              rev=e8785315a01c8fbcddaa0fc03b3c8b29a61bc1f1 head_match=True inherited=False tracked_changes=  0 https://github.com/ahhwuhu/zeta_3_irrational.git
+fixed-point-theorems         rev=770940ddf9878cf61952ed53d910b92bca841838 head_match=True inherited=False tracked_changes=  0 https://github.com/harfe/fixed-point-theorems-lean4.git
+plausible                    rev=118aa17ee84656b8bd727fef7c458ee8c833385c head_match=True inherited=True tracked_changes=  0 https://github.com/leanprover-community/plausible
+LeanSearchClient             rev=ddf04cf3949fa556442341e87d47f9f6e6074707 head_match=True inherited=True tracked_changes=  0 https://github.com/leanprover-community/LeanSearchClient
+importGraph                  rev=e928b72544873815af278d38681b31c0293588e3 head_match=True inherited=True tracked_changes=  0 https://github.com/leanprover-community/import-graph
+proofwidgets                 rev=106ff4fafc74ef4ac99d81dbf3ab399118f497a5 head_match=True inherited=True tracked_changes=  0 https://github.com/leanprover-community/ProofWidgets4
+aesop                        rev=355695d523e41d0554926416cba2a2b3544fbbc9 head_match=True inherited=True tracked_changes=  0 https://github.com/leanprover-community/aesop
+Qq                           rev=6a489d9af5d0c47e5b259e2e8bcdfc1811b5a259 head_match=True inherited=True tracked_changes=  0 https://github.com/leanprover-community/quote4
+batteries                    rev=f2effa3d803fda822b1f97b806c47cf2adfbcbc2 head_match=True inherited=True tracked_changes=  0 https://github.com/leanprover-community/batteries
+leansqlite                   rev=f9cdb9eacb5c8b8ecc02ee9fd9e568d7d28c1416 head_match=True inherited=True tracked_changes=  0 https://github.com/leanprover/leansqlite
+Cli                          rev=e92c9f15fdfacc8536f31cfb3b7ad26c3c8cd204 head_match=True inherited=True tracked_changes=  0 https://github.com/leanprover/lean4-cli
+UnicodeBasic                 rev=0e569d08b6443ce0908d356884c765397253e2f0 head_match=True inherited=True tracked_changes=  0 https://github.com/fgdorais/lean4-unicode-basic
+BibtexQuery                  rev=4d8616fd4870d0a3453d845770833eac7951fe1c head_match=True inherited=True tracked_changes=  0 https://github.com/dupuisf/BibtexQuery
+MD4Lean                      rev=31907cc18f48a95384f99cee5582c00fb39e0f67 head_match=True inherited=True tracked_changes=  0 https://github.com/acmepjz/md4lean
+
+## Trusted closure of the two Challenge files
+mathlib + its deps: batteries, Qq, aesop, proofwidgets, importGraph, LeanSearchClient, plausible — all tracked_changes=0 (unpatched).
+
+## Patched packages (by repo lakefile run_cmd, from lean/patches/*-lean4341.patch) — see package-local-changes.txt
+iut, tate-curves-theta, genl, heights, pi1, orbicurve-cores, oka, tempered-fundamental-groups, elliptic-curves, formal-schemes, belyi
+Not patched (post_update hook only runs on lake update, which was not run): fixed-point-theorems, PrimeNumberTheoremAnd, Zeta3Irrational, rellich-kondrachov, carleson, StrongPNT, AbsorptionCutoff, AINTLIB, ClassFieldTheory, schoenflies-lean, SphereEversion, gromov
+None of these 22 packages is imported (transitively) by either Challenge or either Solution module (imports.py result in PREAUDIT.md §5).

@@ -1,0 +1,25 @@
+## landrun sandbox self-test (as mathaudit, 2026-10-07T19:31:00+08:00)
+[landrun:error] 2026/10/07 19:31:00 Failed to apply sandbox: failed to apply Landlock restrictions: populating ruleset for "/home/mathaudit/sbx" with access {execute,write_file,read_file,truncate,ioctl_dev}: open: no such file or directory
+write outside allowed -> rc=1
+write inside --rwx dir -> rc=0
+curl: (7) Failed to connect to github.com port 443 after 0 ms: Could not connect to server
+network tcp connect -> rc=7
+[landrun:debug] 2026/10/07 19:31:00 Added executable path: /bin/true
+[landrun:debug] 2026/10/07 19:31:00 Added library paths: [/lib/x86_64-linux-gnu/libc.so.6 /etc/ld.so.cache /lib64/ld-linux-x86-64.so.2]
+[landrun] 2026/10/07 19:31:00 Sandbox config: {ReadOnlyPaths:[/] ReadWritePaths:[/dev] ReadOnlyExecutablePaths:[/bin/true /lib/x86_64-linux-gnu/libc.so.6 /etc/ld.so.cache /lib64/ld-linux-x86-64.so.2] ReadWriteExecutablePaths:[] UnixSocketPaths:[] BindTCPPorts:[] ConnectTCPPorts:[] BestEffort:true UnrestrictedFilesystem:false UnrestrictedNetwork:false UnrestrictedScoped:false IgnoreMissingPaths:false DisableLogOriginating:false EnableLogSubprocesses:false DisableLogSubdomains:false}
+[landrun:debug] 2026/10/07 19:31:00 Adding read-only executable path: /bin/true
+[landrun:debug] 2026/10/07 19:31:00 Adding read-only executable path: /lib/x86_64-linux-gnu/libc.so.6
+[landrun:debug] 2026/10/07 19:31:00 Adding read-only executable path: /etc/ld.so.cache
+[landrun:debug] 2026/10/07 19:31:00 Adding read-only executable path: /lib64/ld-linux-x86-64.so.2
+[landrun:debug] 2026/10/07 19:31:00 Adding read-only path: /
+[landrun:debug] 2026/10/07 19:31:00 Adding read-write path: /dev
+[landrun:debug] 2026/10/07 19:31:00 Applying Landlock restrictions: {Landlock V9; FS: all; Net: all; Scoped: all (best effort)}
+[landrun] 2026/10/07 19:31:00 Landlock restrictions applied successfully
+[landrun] 2026/10/07 19:31:00 Executing: [/bin/true]
+## re-run of write-outside test with existing sbx dir
+/bin/sh: 1: cannot create /home/mathaudit/notallowed.txt: Permission denied
+write outside allowed -> rc=2
+ls: cannot access '/home/mathaudit/notallowed.txt': No such file or directory
+kernel landlock ABI (landlock_create_ruleset VERSION):
+6
+capability,landlock,selinux

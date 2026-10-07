@@ -1,0 +1,8 @@
+# Workspace diff after both Comparator runs (2026-10-07T20:44:13+08:00)
+HEAD: adc7f1241b42e322a6451854ab7e4b4c146bf78a
+## git status --porcelain (untracked shown; .lake is ignored?)
+## git status --porcelain --ignored (top-level ignored entries)
+!! lean/.lake/
+## git diff (tracked files)
+## git diff --stat
+(end)

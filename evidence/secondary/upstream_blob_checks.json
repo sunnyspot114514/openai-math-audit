@@ -1,0 +1,32 @@
+[
+  {
+    "path": "preaudit-copies/MahlerConjecture.lean",
+    "github_blob_sha": "bb8fd407424ca2e0a71dc34fa6d60cf8ce84bd8d",
+    "local_git_blob_sha": "bb8fd407424ca2e0a71dc34fa6d60cf8ce84bd8d",
+    "match": true
+  },
+  {
+    "path": "preaudit-copies/SymmetricPolar.lean",
+    "github_blob_sha": "56be6f5aed669656141c77a4e505d3d96924d6af",
+    "local_git_blob_sha": "56be6f5aed669656141c77a4e505d3d96924d6af",
+    "match": true
+  },
+  {
+    "path": "preaudit-copies/MahlerConjecture.json",
+    "github_blob_sha": "410a7c012b122da7d8a7f78e6214e1f9856e9d9b",
+    "local_git_blob_sha": "410a7c012b122da7d8a7f78e6214e1f9856e9d9b",
+    "match": true
+  },
+  {
+    "path": "preaudit-copies/SymmetricPolar.json",
+    "github_blob_sha": "9fb1ac5bb143503a4fda4c4055d2a890951a62e0",
+    "local_git_blob_sha": "9fb1ac5bb143503a4fda4c4055d2a890951a62e0",
+    "match": true
+  },
+  {
+    "path": "comparator-README-d03acab.md",
+    "github_blob_sha": "e1d67f66231d4d18feae57797ee850ab5e00f2c0",
+    "local_git_blob_sha": "e1d67f66231d4d18feae57797ee850ab5e00f2c0",
+    "match": true
+  }
+]

@@ -1,0 +1,67 @@
+PUBLICATION COPY: host identifiers or unrelated host paths have been pseudonymized. See docs/PROVENANCE.en.md and evidence/provenance/publication_map.json. Verification results and target statements are unchanged.
+
+# VERSIONS — openai/math audit @ adc7f1241b42e322a6451854ab7e4b4c146bf78a
+generated: 2026-10-07T19:47:00+08:00
+
+## Host / OS
+uname -a: Linux audit-host 6.12.94+ #1 SMP PREEMPT_DYNAMIC Mon Sep 28 22:00:32 UTC 2026 x86_64 GNU/Linux
+PRETTY_NAME="Debian GNU/Linux 13 (trixie)"
+VERSION_ID="13"
+nproc: 8
+MemTotal:       16397616 kB
+LSMs: capability,landlock,selinux
+Landlock ABI (landlock_create_ruleset(NULL,0,VERSION)): 6
+PID 1: tini (no systemd)
+
+## Audit identity
+id: uid=1001(mathaudit) gid=1001(mathaudit) groups=1001(mathaudit)
+HOME: /home/mathaudit
+
+## Lean toolchain (fresh elan install in audit HOME)
+elan-init tarball: https://github.com/leanprover/elan/releases/latest/download/elan-x86_64-unknown-linux-gnu.tar.gz sha256 42b94d4244e8353142c456ec0e4ca6528fd898a6c604d4059f494e706e431f63
+elan: elan 4.2.4 (227caca13 2026-08-25)
+lean-toolchain (repo): leanprover/lean4:v4.34.1
+lean: Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)
+lake: Lake version 5.0.0-src+5045d00 (Lean version 4.34.1)
+lean binary: /home/mathaudit/.elan/toolchains/leanprover--lean4---v4.34.1/bin/lean sha256 e8baaa71855a616dc351028f3ad2200051b0671f423a1696a100e809302d5550
+lean --print-prefix: /home/mathaudit/.elan/toolchains/leanprover--lean4---v4.34.1
+
+## Comparator
+repo: https://github.com/leanprover/comparator
+commit used: d03acab154d269c06e60e4de7e4cc85deebff94b (2026-09-14 16:24:00 +0200 chore: bump toolchain to v4.34.0 (#90))
+upstream master at clone time: ca04cfc72b550331658ec314bf47685281bfd4bf (differs from d03acab only in lean-toolchain v4.35.0-rc4 and lake-manifest lean4export rev; README identical)
+build patch: lean-toolchain v4.34.0 -> v4.34.1 (see tool-patch-comparator-toolchain.diff); built with: lake build lean4export comparator
+binary: ~/bin/comparator sha256 afa65e57a1770f5961efe7681626a9a1cd99705262421658abd30b705f66e4a2
+
+## lean4export
+repo: https://github.com/leanprover/lean4export
+commit used: 076e8e57707e813375e8f9da8bf989799ace9680 (= tag v4.34.0: 076e8e57707e813375e8f9da8bf989799ace9680); pinned in comparator@d03acab lake-manifest; built with Lean v4.34.1 via comparator workspace
+binary: ~/bin/lean4export sha256 8c5d64ba68f4d3a68b3bcb7e1c5f188e35ae573b29470b8d4530a62324c9ddd1
+
+## landrun
+repo: https://github.com/Zouuup/landrun (main)
+commit used: 811cfff51ceaf3d9843708aa6d22e9b84ccac8b4 (2026-07-23 13:23:09 +0100 Update README.md)
+version: landrun version 0.1.18
+built with: go build -o ~/bin/landrun ./cmd/landrun ; go version go1.24.4 linux/amd64; GOPROXY=https://proxy.golang.org,direct
+go module deps (go.mod require):
+require (
+	github.com/landlock-lsm/go-landlock v0.9.0
+	github.com/urfave/cli/v3 v3.6.2
+)
+require (
+	golang.org/x/sys v0.40.0 // indirect
+	kernel.org/pub/linux/libs/security/libcap/psx v1.2.77 // indirect
+)
+binary sha256 bc8c5a2bc1fb0964abb8f1cbbb1fc0527218dfd9364ac3ee0699cc454776f365
+
+## restrict-af-unix (systemd-run RestrictAddressFamilies=~AF_UNIX equivalent; see REPORT.md)
+source: tools/restrict_af_unix.c sha256 558e9267cd792c36de55b4f419d0fb7d72d876b8a83eb891246fc25da7cf57b4; compiled: gcc -O2 -Wall ; gcc (Debian 14.2.0-19) 14.2.0
+binary sha256 058b980012a18d668206d3c8b0d5df738cfebb1933efd0a1d411435a2fd3fe78
+
+## nanoda
+not used (enable_nanoda=false in both configs, no external_kernels)
+
+## Other host tools
+git version 2.47.3
+GNU time: Version: 1.9-0.2
+Python 3.13.5

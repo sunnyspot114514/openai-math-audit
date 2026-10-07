@@ -1,0 +1,41 @@
+# PATCHES — openai/math audit @ adc7f1241b42e322a6451854ab7e4b4c146bf78a
+
+## A. Repository under test (openai/math)
+none. `git diff` empty and `git status --porcelain` empty after both runs (workspace-diff.txt).
+Only ignored build dir `lean/.lake/` was created. No source, config, challenge, permitted-axiom or definition
+changes. Both configs ran unmodified. Only one set of runs (original); there is no "modified" run.
+
+## B. Third-party Lean dependencies (by the repo's own mechanism, not by the auditor)
+The repo's lakefile.lean `run_cmd` (runs on every lake invocation) cloned and applied the repo-provided
+patches `lean/patches/<pkg>-lean4341.patch` to 11 packages:
+  iut, tate-curves-theta, genl, heights, pi1, orbicurve-cores, oka, tempered-fundamental-groups,
+  elliptic-curves, formal-schemes, belyi
+Each checkout is at its pinned manifest commit; its working-tree diff is exactly the repo patch
+(`git apply --check --reverse` succeeds; changed-file count == patch file count; package-local-changes.txt).
+These are the source of lake's "repository ... has local changes" warnings in *.stderr.log.
+The 12 post_update patches were NOT applied (no `lake update` was run).
+None of these 23 packages is in the import closure of either Challenge or either Solution (PREAUDIT.md §5;
+confirmed after the runs: the only non-Mathlib-closure oleans built are the 277 =
+2 Challenge + 229 Mahler-solution + 46 Polar-solution OAI modules; no patched package got any build output).
+Mathlib and its dependencies (batteries, Qq, aesop, proofwidgets, importGraph, LeanSearchClient, plausible)
+have 0 tracked changes.
+
+## C. Verification tools (separate from the repo under test)
+1. leanprover/comparator @ d03acab154d269c06e60e4de7e4cc85deebff94b — ONE-LINE TOOLCHAIN PIN CHANGE:
+     lean-toolchain: leanprover/lean4:v4.34.0  ->  leanprover/lean4:v4.34.1
+   (tool-patch-comparator-toolchain.diff). No Lean source of comparator or lean4export changed.
+   Why: lean4export loads the project's .olean files, and Lean only reads .olean files produced by the
+   exact same Lean build, so lean4export must be compiled with v4.34.1 (the repo's toolchain). No
+   upstream comparator/lean4export tag exists for v4.34.1; d03acab (v4.34.0) is the newest commit before the
+   v4.35 rc bumps, and d03acab..master (ca04cfc) differs only in lean-toolchain/lake-manifest
+   (only "chore: bump toolchain" commits). lean4export rev 076e8e5 (= tag v4.34.0) as pinned by d03acab.
+   Effect on checking semantics: comparator's statement comparison, axiom check and kernel replay logic is
+   unchanged source; the replay uses the Lean kernel of the toolchain it is compiled with, which is now the
+   same v4.34.1 kernel the project targets (instead of v4.34.0). This aligns, rather than relaxes, the check.
+2. lean4export @ 076e8e57707e813375e8f9da8bf989799ace9680: no source change; compiled with v4.34.1 inside the
+   comparator workspace.
+3. landrun @ 811cfff51ceaf3d9843708aa6d22e9b84ccac8b4 (main), v0.1.18: no change; `go build ./cmd/landrun`.
+4. New helper (not a patch): restrict-af-unix (restrict_af_unix.c), used in place of the README's
+   `systemd-run --property=RestrictAddressFamilies=~AF_UNIX --user --pty` because the host has no systemd
+   (PID 1 = tini). See REPORT.md §3.
+5. nanoda: not used (enable_nanoda=false, no external_kernels in either config).

@@ -1,0 +1,57 @@
+Building ComparatorChallenges.SymmetricPolar
+⚠ [8924/8924] Built ComparatorChallenges.SymmetricPolar (38s)
+warning: ComparatorChallenges/SymmetricPolar.lean:40:8: declaration uses `sorry`
+Build completed successfully (8924 jobs).
+Exporting #[Quot, Quot.mk, Quot.lift, Quot.ind, OAI.SymmetricPolar.symmetric_polar_main, propext, Quot.sound, Classical.choice, Nat.add, Nat.sub, Nat.mul, Nat.pow, Nat.gcd, Nat.div, Nat.mod, Nat.beq, Nat.ble, Nat.land, Nat.lor, Nat.xor, Nat.shiftLeft, Nat.shiftRight, String.ofList, Char.ofNat, List, eagerReduce, Nat, String, String.mk, Char, optParam, autoParam, semiOutParam, outParam] from ComparatorChallenges.SymmetricPolar
+Building OAI.Geometry.PolarProducts.Main
+✔ [8924/8969] Built OAI.Geometry.PolarProducts.Model (37s)
+✔ [8925/8969] Built OAI.Geometry.PolarProducts.Contraction (47s)
+✔ [8926/8969] Built OAI.Geometry.PolarProducts.SmoothPaths (34s)
+✔ [8927/8969] Built OAI.Geometry.PolarProducts.LocalODE (32s)
+✔ [8928/8969] Built OAI.Geometry.PolarProducts.CompleteFlow (35s)
+✔ [8929/8969] Built OAI.Geometry.PolarProducts.SmoothFlow (71s)
+✔ [8930/8969] Built OAI.Geometry.PolarProducts.TensorCalculus (48s)
+✔ [8931/8969] Built OAI.Geometry.PolarProducts.MoserField (68s)
+✔ [8932/8969] Built OAI.Geometry.PolarProducts.MoserFlow (51s)
+✔ [8933/8969] Built OAI.Geometry.PolarProducts.PotentialForms (35s)
+✔ [8934/8969] Built OAI.Geometry.PolarProducts.PotentialDeformation (69s)
+✔ [8935/8969] Built OAI.Geometry.PolarProducts.RegularizedMaximum (38s)
+✔ [8936/8969] Built OAI.Geometry.PolarProducts.RadialMap (33s)
+✔ [8937/8969] Built OAI.Geometry.PolarProducts.HolomorphicBalls (45s)
+✔ [8938/8969] Built OAI.Geometry.PolarProducts.LogProfile (40s)
+✔ [8939/8969] Built OAI.Geometry.PolarProducts.LensMap (57s)
+✔ [8940/8969] Built OAI.Geometry.PolarProducts.LensArea (40s)
+✔ [8941/8969] Built OAI.Geometry.PolarProducts.LensEstimates (38s)
+✔ [8942/8969] Built OAI.Geometry.PolarProducts.HorizontalIntegrals (63s)
+✔ [8943/8969] Built OAI.Geometry.PolarProducts.TipEstimates (34s)
+✔ [8944/8969] Built OAI.Geometry.PolarProducts.LensBounds (53s)
+✔ [8945/8969] Built OAI.Geometry.PolarProducts.StripMaps (54s)
+✔ [8946/8969] Built OAI.Geometry.PolarProducts.StripEmbedding (57s)
+✔ [8947/8969] Built OAI.Geometry.PolarProducts.MomentumBounds (68s)
+✔ [8948/8969] Built OAI.Geometry.PolarProducts.PolarApproximation (66s)
+✔ [8949/8969] Built OAI.Geometry.PolarProducts.LowerBound (30s)
+✔ [8950/8969] Built OAI.Geometry.PolarProducts.SmoothDegree (36s)
+✔ [8951/8969] Built OAI.Geometry.PolarProducts.FiniteDescent (71s)
+✔ [8952/8969] Built OAI.Geometry.PolarProducts.GradientLinking (34s)
+✔ [8953/8969] Built OAI.Geometry.PolarProducts.FourierIntegrals (42s)
+✔ [8954/8969] Built OAI.Geometry.PolarProducts.FourierPaths (42s)
+✔ [8955/8969] Built OAI.Geometry.PolarProducts.QuadraticAction (67s)
+✔ [8956/8969] Built OAI.Geometry.PolarProducts.GalerkinBounds (34s)
+✔ [8957/8969] Built OAI.Geometry.PolarProducts.PeriodicFourier (64s)
+✔ [8958/8969] Built OAI.Geometry.PolarProducts.PeriodicSolutions (36s)
+✔ [8959/8969] Built OAI.Geometry.PolarProducts.HamiltonianODE (54s)
+✔ [8960/8969] Built OAI.Geometry.PolarProducts.HamiltonianGrowth (80s)
+✔ [8961/8969] Built OAI.Geometry.PolarProducts.EmbeddingInverse (40s)
+✔ [8962/8969] Built OAI.Geometry.PolarProducts.SmoothProfiles (58s)
+✔ [8963/8969] Built OAI.Geometry.PolarProducts.ExteriorHamiltonian (89s)
+✔ [8964/8969] Built OAI.Geometry.PolarProducts.Nonsqueezing (80s)
+✔ [8965/8969] Built OAI.Geometry.PolarProducts.CanonicalCylinder (56s)
+✔ [8966/8969] Built OAI.Geometry.PolarProducts.PlanarSquare (40s)
+✔ [8967/8969] Built OAI.Geometry.PolarProducts.CanonicalCoordinates (72s)
+✔ [8968/8969] Built OAI.Geometry.PolarProducts.UpperBound (47s)
+✔ [8969/8969] Built OAI.Geometry.PolarProducts.Main (69s)
+Build completed successfully (8969 jobs).
+Exporting #[Quot, Quot.mk, Quot.lift, Quot.ind, OAI.SymmetricPolar.symmetric_polar_main, propext, Quot.sound, Classical.choice, Nat.add, Nat.sub, Nat.mul, Nat.pow, Nat.gcd, Nat.div, Nat.mod, Nat.beq, Nat.ble, Nat.land, Nat.lor, Nat.xor, Nat.shiftLeft, Nat.shiftRight, String.ofList, Char.ofNat, List, eagerReduce, Nat, String, String.mk, Char, optParam, autoParam, semiOutParam, outParam] from OAI.Geometry.PolarProducts.Main
+Running Lean default kernel on solution.
+Lean default kernel accepts the solution
+Your solution is okay!

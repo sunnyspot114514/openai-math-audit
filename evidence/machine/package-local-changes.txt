@@ -1,0 +1,33 @@
+# Packages reported by lake as having local changes (checked 2026-10-07T20:16:28+08:00)
+iut: HEAD=d9465c111ec4073709f67e9fccec7e3eb374a816 changed_paths=29 untracked=0 patch_files=29 ; reverse-apply of repo patch OK
+ 29 files changed, 174 insertions(+), 181 deletions(-)
+tate-curves-theta: HEAD=ca6c2279d3cea0690cdb01328e727118d5485d68 changed_paths=3 untracked=0 patch_files=3 ; reverse-apply of repo patch OK
+ 3 files changed, 20 insertions(+), 18 deletions(-)
+genl: HEAD=ea2846c877d1e16d8f0b911a5fed07f5ee69eaaf changed_paths=3 untracked=0 patch_files=3 ; reverse-apply of repo patch OK
+ 3 files changed, 40 insertions(+), 32 deletions(-)
+heights: HEAD=721496ca4c158e511d25d8ccf6bfe8503eda73c1 changed_paths=17 untracked=0 patch_files=17 ; reverse-apply of repo patch OK
+ 17 files changed, 65 insertions(+), 62 deletions(-)
+pi1: HEAD=ca7def953193f861a462aa0831eec8f0a31ff69f changed_paths=19 untracked=0 patch_files=19 ; reverse-apply of repo patch OK
+ 19 files changed, 55 insertions(+), 48 deletions(-)
+orbicurve-cores: HEAD=61616dcd77fbe45c083a8ebfa7cc80728f86e841 changed_paths=26 untracked=0 patch_files=26 ; reverse-apply of repo patch OK
+ 26 files changed, 129 insertions(+), 72 deletions(-)
+oka: HEAD=75dcdc3faadd10b986afb9283e89902bcdddecd4 changed_paths=87 untracked=0 patch_files=87 ; reverse-apply of repo patch OK
+ 87 files changed, 319 insertions(+), 347 deletions(-)
+tempered-fundamental-groups: HEAD=2006651f52b70ea2fe3388238c7d9db14d21748f changed_paths=6 untracked=0 patch_files=6 ; reverse-apply of repo patch OK
+ 6 files changed, 51 insertions(+), 35 deletions(-)
+elliptic-curves: HEAD=bebec3fc9f2602e81c83e5236789572a541c85fb changed_paths=22 untracked=0 patch_files=22 ; reverse-apply of repo patch OK
+ 22 files changed, 104 insertions(+), 82 deletions(-)
+formal-schemes: HEAD=51aa935079537bf4dc580751a6e70727fb23ca93 changed_paths=5 untracked=0 patch_files=5 ; reverse-apply of repo patch OK
+ 5 files changed, 23 insertions(+), 18 deletions(-)
+belyi: HEAD=9ce4d3f793d3bc831f2fc7214b7dbad90ea012d8 changed_paths=15 untracked=0 patch_files=15 ; reverse-apply of repo patch OK
+ 15 files changed, 63 insertions(+), 51 deletions(-)
+
+# Trusted-closure packages (tracked changes)
+mathlib: 0 tracked changes
+batteries: 0 tracked changes
+aesop: 0 tracked changes
+Qq: 0 tracked changes
+proofwidgets: 0 tracked changes
+importGraph: 0 tracked changes
+LeanSearchClient: 0 tracked changes
+plausible: 0 tracked changes

@@ -1,0 +1,18 @@
+date_start=2026-10-07T19:46:43+08:00
+cwd=/home/mathaudit/audit/math/lean
+id=uid=1001(mathaudit) gid=1001(mathaudit) groups=1001(mathaudit)
+which: comparator=/home/mathaudit/bin/comparator lean4export=/home/mathaudit/bin/lean4export landrun=/home/mathaudit/bin/landrun restrict-af-unix=/home/mathaudit/bin/restrict-af-unix lake=/home/mathaudit/.elan/bin/lake
+--- env (scrubbed with env -i) ---
+HOME=/home/mathaudit
+LANG=C.UTF-8
+LOGNAME=mathaudit
+OLDPWD=/tmp
+PATH=/home/mathaudit/.elan/bin:/home/mathaudit/go/bin:/home/mathaudit/bin:/usr/local/bin:/usr/bin:/bin
+PWD=/home/mathaudit/audit/math/lean
+SHELL=/bin/bash
+SHLVL=1
+USER=mathaudit
+_=/usr/bin/env
+--- command ---
+/usr/bin/time -v -o /home/mathaudit/audit/out/polar.time.txt restrict-af-unix bash -c lake\ env\ comparator\ ComparatorChallenges/SymmetricPolar.json > /home/mathaudit/audit/out/polar.stdout.log 2> /home/mathaudit/audit/out/polar.stderr.log
+wall_seconds=2872.4 date_end=2026-10-07T20:34:36+08:00 exit_code=0

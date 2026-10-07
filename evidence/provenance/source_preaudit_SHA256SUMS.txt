@@ -1,0 +1,12 @@
+051459a45da1bedd1c0a6585a5b5e5425c7c40a369f2922d7b519e2fd02333b0  /home/mathaudit/audit/out/preaudit-copies/ComparatorChallenges-README.md
+fdf11d50fc36b5ae3d13aeea074aa6e40071c6bacd8de44fc399ac9ac9251959  /home/mathaudit/audit/out/preaudit-copies/MahlerConjecture.json
+40718172f61fe01f6c96b4c28324a1d76491eb84af4776d8507d8cdcb3120ea0  /home/mathaudit/audit/out/preaudit-copies/MahlerConjecture.lean
+051459a45da1bedd1c0a6585a5b5e5425c7c40a369f2922d7b519e2fd02333b0  /home/mathaudit/audit/out/preaudit-copies/README.md
+0665fbaed509ae1465a32ed1f1548988b1416b15a93f1c8eec10cdc633b06e95  /home/mathaudit/audit/out/preaudit-copies/SymmetricPolar.json
+3683f15ea0cf510f677e40d0db8aff6c2b442bac325241984ff5a57ca4d9075a  /home/mathaudit/audit/out/preaudit-copies/SymmetricPolar.lean
+85fdda35b4d2c609d330331cde9972b51dcda6127eef31d42e451c1bb644b0eb  /home/mathaudit/audit/out/preaudit-copies/docs-087.md
+cf6105a25d9dca2f166b241d9191bd12c7e13305890dc9c4d0952351cccc0794  /home/mathaudit/audit/out/preaudit-copies/lake-manifest.json
+4cca977ebece444b6c999d99755c1ad3c93119bafc127ea761f7f703c7279e74  /home/mathaudit/audit/out/preaudit-copies/lakefile.lean
+292ff9d539f494158dfbf68d989ba85a82782a4343b2fe43088f8fa62525bf1b  /home/mathaudit/audit/out/preaudit-copies/lean-README.md
+d5edba4e4b8faad9c1baeadb265716d20d03be4d1a2647dc5e35b0c0325bea7b  /home/mathaudit/audit/out/preaudit-copies/lean-toolchain
+6d2020cdb49a99331391ea3331bd817a8b31fad33e5be4555247c9f1194542e2  /home/mathaudit/audit/out/preaudit-copies/patches-README.md

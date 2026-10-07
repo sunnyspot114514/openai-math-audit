@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+message: "Please cite this audit record separately from the upstream mathematical papers. / 请将本审计记录与原始数学论文分别引用。"
+title: "OpenAI Math Audit: Symmetric Mahler and Symmetric Polar Products"
+authors:
+  - name: "SUNNY99"
+version: "1.0.0"
+date-released: "2026-10-07"
+license: "Apache-2.0"
+type: dataset
+abstract: >-
+  A bilingual publication package for a user-organized independent Comparator replay
+  of two formal statements at openai/math commit adc7f1241b42e322a6451854ab7e4b4c146bf78a.
+  Includes execution records, axiom outputs, scope notes, secondary review and a
+  bilingual essay on verification and explanation as generation becomes cheaper.
+  Not an authorship claim for the upstream theorems. No fresh Lean run was performed
+  during packaging.
+keywords:
+  - mathematical proof verification
+  - Lean
+  - Comparator
+  - Mahler conjecture
+  - symplectic geometry
+  - AI-assisted research

@@ -1,0 +1,11 @@
+OpenAI Math Audit — publication package
+Copyright 2026 SUNNY99 (sunnyspot114514), for new editorial material and bundle-inspection code.
+
+This is an independent audit record, not an OpenAI release or a claim of authorship of the underlying theorems.
+
+Upstream mathematical statements and build metadata in evidence/machine/preaudit-copies/
+originate from openai/math at adc7f1241b42e322a6451854ab7e4b4c146bf78a.
+Comparator documentation snapshots originate from leanprover/comparator (Lean FRO and contributors).
+These upstream works retain their original authorship and Apache-2.0 licensing.
+New material in this package does not replace any upstream notice or license.
+See THIRD_PARTY_NOTICES.md and evidence/provenance/publication_map.json.

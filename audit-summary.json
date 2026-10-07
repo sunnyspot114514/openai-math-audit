@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "audit_date": "2026-10-07",
+  "upstream_repository": "openai/math",
+  "upstream_commit": "adc7f1241b42e322a6451854ab7e4b4c146bf78a",
+  "maintainer": "SUNNY99 (sunnyspot114514)",
+  "evidence_type": "Recorded independent Comparator replay with secondary review",
+  "lean_version": "4.34.1",
+  "comparator_commit": "d03acab154d269c06e60e4de7e4cc85deebff94b",
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ],
+  "second_kernel_used": false,
+  "official_mathlib_cache_used": true,
+  "fresh_lean_run_during_packaging": false,
+  "targets": [
+    {
+      "id": "mahler",
+      "config": "MahlerConjecture.json",
+      "theorem": "OAI.SymmetricMahler.symmetric_mahler",
+      "solution_module": "OAI.Analysis.Mahler.MainTheorem",
+      "recorded_verdict": "VERIFIED",
+      "recorded_exit_code": 0,
+      "recorded_wall_seconds": 681.19,
+      "recorded_wall_time": "11:21.19",
+      "dimension": "n >= 1",
+      "scope": "Symmetric Mahler lower bound only; equality characterization excluded"
+    },
+    {
+      "id": "polar",
+      "config": "SymmetricPolar.json",
+      "theorem": "OAI.SymmetricPolar.symmetric_polar_main",
+      "solution_module": "OAI.Geometry.PolarProducts.Main",
+      "recorded_verdict": "VERIFIED",
+      "recorded_exit_code": 0,
+      "recorded_wall_seconds": 2872.38,
+      "recorded_wall_time": "47:52.38",
+      "dimension": "n >= 2",
+      "scope": "Gromov width 4 of symmetric polar products; embeddings for every 0 < c < 4, not necessarily c = 4"
+    }
+  ],
+  "not_checked": [
+    "All 722 manuscripts",
+    "Whole Family 087",
+    "General nonsymmetric Mahler",
+    "Hanner equality classification",
+    "Quasi-Riemann result",
+    "All Viterbo conjecture variants",
+    "Model-discovery reproducibility"
+  ],
+  "limits": [
+    "The publication step reviews logs; it does not repeat Lean.",
+    "Single default Lean kernel; no external-kernel check.",
+    "Official Mathlib binary cache, not a complete source rebuild.",
+    "Separate non-privileged account on a shared host, not a certified clean VM.",
+    "Custom AF_UNIX seccomp wrapper; no independent full sandbox equivalence certification.",
+    "Hashes do not authenticate the original execution history."
+  ]
+}

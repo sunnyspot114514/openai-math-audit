@@ -1,0 +1,11 @@
+'OAI.SymmetricPolar.symmetric_polar_main' depends on axioms: [propext, Classical.choice, Quot.sound]
+@OAI.SymmetricPolar.symmetric_polar_main : ∀ {n : ℕ},
+  2 ≤ n →
+    ∀ (K : Set (OAI.SymmetricPolar.Position n)),
+      OAI.SymmetricPolar.IsSymmetricConvexBody K →
+        OAI.SymmetricPolar.gromovWidth (OAI.SymmetricPolar.polarProduct K) = 4 ∧
+          ∀ (c : ℝ),
+            0 < c →
+              c < 4 →
+                OAI.SymmetricPolar.HasSymplecticEmbedding (OAI.SymmetricPolar.capacityBall n c)
+                  (OAI.SymmetricPolar.polarProduct K)

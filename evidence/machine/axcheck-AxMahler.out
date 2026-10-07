@@ -1,0 +1,10 @@
+'OAI.SymmetricMahler.symmetric_mahler' depends on axioms: [propext, Classical.choice, Quot.sound]
+@OAI.SymmetricMahler.symmetric_mahler : ∀ {n : ℕ},
+  1 ≤ n →
+    ∀ {K : Set (Fin n → ℝ)},
+      IsCompact K →
+        Convex ℝ K →
+          (∀ x ∈ K, -x ∈ K) →
+            (interior K).Nonempty →
+              4 ^ n / ↑n.factorial ≤
+                (MeasureTheory.volume K).toReal * (MeasureTheory.volume (OAI.SymmetricMahler.coordinatePolar K)).toReal
